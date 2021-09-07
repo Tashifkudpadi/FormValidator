@@ -11,11 +11,11 @@ const AddUser = () => {
 
   const addUserHandler = (event) => {
     event.preventDefault();
-    if (!enteredUsername.includes("@") || enteredPassword.trim().length === 0) {
+    if (!enteredUsername.includes("@")) {
       setFormIsValid(false);
       return;
     }
-    if (enteredPassword <= 6) {
+    if (enteredPassword.length <= 6) {
       setFormIsValid(false);
       return;
     }
