@@ -42,6 +42,7 @@ const AddUser = () => {
             type="text"
             value={enteredUsername}
             onChange={usernameChangeHandler}
+            autoComplete="off"
           />
           {!formIsValid && (
             <p style={{ color: "red" }}>Please enter a valid email.</p>
